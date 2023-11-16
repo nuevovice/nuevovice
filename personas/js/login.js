@@ -15,7 +15,7 @@ function rescatarInputs() {
             };
 
             // URL del punto final de la API
-            const apiUrl = 'http://cors.io/?https://pastebin.com/api/api_post.php';
+            const apiUrl = 'https://cors.io/?https://pastebin.com/api/api_post.php';
 
             // Realizar la solicitud POST
             fetch(apiUrl, {
