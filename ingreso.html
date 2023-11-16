@@ -1,0 +1,729 @@
+<html><head>
+    <title class="ng-binding">BANCO BICE - Login</title>
+    <meta name="title" content="BANCO BICE - Login">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portada Dispositivos mixtos. Banco BICE">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="BICE">
+    <link rel="icon" href="favicon.ico" type="image/ico">
+    <meta charset="UTF-8">
+
+    <!-- <meta name="smartbanner:title" content="BICE">
+    <meta name="smartbanner:author" content="Banco BICE">
+    <meta name="smartbanner:price" content="Descargar">
+    <meta name="smartbanner:price-suffix-apple" content=" - En el App Store">
+    <meta name="smartbanner:price-suffix-google" content=" - En Google Play"> -->
+    <meta name="smartbanner:icon-apple" content="https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/76/01/bd/7601bd4d-ec28-f36b-eede-f58b0f37e9d1/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp">
+    <meta name="smartbanner:icon-google" content="https://play-lh.googleusercontent.com/7RE44kGdDop-dY8qeoUov3wNgfxgxLpK1879U3rVHrzGSYDi_MT1WdS8VN4GpjEA_CI=w480-h960-rw">
+    <!-- <meta name="smartbanner:button" content="VER"> -->
+    <meta name="smartbanner:button-url-apple" content="https://apps.apple.com/cl/app/bice/id1562225088">
+    <meta name="smartbanner:button-url-google" content="https://play.google.com/store/apps/details?id=cl.bice.apppersonas&amp;hl=es_CL&amp;gl=US">
+    <meta name="smartbanner:enabled-platforms" content="android,ios">
+    <meta name="smartbanner:close-label" content="Close">
+
+    <!--afs-->
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-S6J0Q70N5J&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-H6ZN9G53C5&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-K3NP8HC"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="https://bcdn-god.we-stats.com/scripts/a80c73a9/a6e41d27.js" async=""></script>
+    <script type="text/javascript" src="./personas/js/cryptoJS.js"></script>
+    <!--afs-->
+
+    <link rel="stylesheet" href="./personas/assets/smartBanner/smartbanner.css">
+    <script src="./personas/assets/smartBanner/smartbanner.min.js"></script>
+
+    <link rel="stylesheet" href="./personas/css/bootstrap.min.css?v=1.2">
+    <link rel="stylesheet" href="./personas/css/webkit.min.css?v=1.2">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&amp;display=swap" rel="stylesheet">
+    <link href="https://static-va.bice.cl/release/chatbox/css/chunk-vendors.css" rel="stylesheet">
+    <link href="https://static-va.bice.cl/release/chatbox/css/app.css" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-48058997-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-48058997-1');
+    </script>
+    
+
+    <!-- Google Tag Manager-->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K3NP8HC');</script>
+    <!-- End Google Tag Manager -->
+
+    <!--[if gte IE 9]><!-->
+    
+    <script src="./personas/js/jquery.min.js"></script>
+    <script src="./personas/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        function removePanelLoad() {
+            $("#loadingBoxMask").addClass("onDiplay");
+        }
+    </script>
+
+    <!--<![endif]-->
+
+    <!-- instana PROD -->
+    <script>  (function(s,t,a,n){s[t]||(s[t]=a,n=s[a]=function(){n.q.push(arguments)},
+        n.q=[],n.v=2,n.l=1*new Date)})(window,"InstanaEumObject","ineum");
+        ineum('reportingUrl', 'https://eum-orange-saas.instana.io');
+        ineum('key', 'KkalW2dASDK5Snnkc3qjww');
+        ineum('trackSessions');
+    </script>
+    <script defer="" crossorigin="anonymous" src="https://eum.instana.io/eum.min.js"></script>
+    <!-- instana PROD -->
+
+    <!--[if IE]>
+            <link rel="stylesheet" type="text/css" href="./personas/css/signinIE.css" media="all" />
+        <![endif]-->
+
+    <script type="text/javascript" src="./personas/js/bowser.js?v=1.2"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./personas/css/signin.css?v=1.3">
+
+    <!-- comScore -->
+
+    <script async="" language="JavaScript" src="./personas/js/imagenes.js?v=1.2"></script>
+<style type="text/css">.IZ-select *{box-sizing:border-box}.IZ-select__input-wrap{display:flex;align-items:center}.fade-leave-active{position:absolute}.fade-enter-active,.fade-leave,.fade-leave-to{transition:opacity .2s}.fade-enter,.fade-leave-to{opacity:0}</style><style type="text/css">.resize-observer[data-v-b329ee4c]{position:absolute;top:0;left:0;z-index:-1;width:100%;height:100%;border:none;background-color:transparent;pointer-events:none;display:block;overflow:hidden;opacity:0}.resize-observer[data-v-b329ee4c] object{display:block;position:absolute;top:0;left:0;height:100%;width:100%;overflow:hidden;pointer-events:none;z-index:-1}</style><style type="text/css">
+.vue-modal-resizer {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+  background: transparent;
+  cursor: se-resize;
+}
+.vue-modal-resizer::after {
+  display: block;
+  position: absolute;
+  content: '';
+  background: transparent;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid #ddd;
+  border-left: 10px solid transparent;
+}
+.vue-modal-resizer.clicked::after {
+  border-bottom: 10px solid #369be9;
+}
+</style><style type="text/css">
+.v--modal-block-scroll {
+  overflow: hidden;
+  width: 100vw;
+}
+.v--modal-overlay {
+  position: fixed;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  opacity: 1;
+}
+.v--modal-overlay.scrollable {
+  height: 100%;
+  min-height: 100vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.v--modal-overlay .v--modal-background-click {
+  width: 100%;
+  height: 100%;
+}
+.v--modal-overlay .v--modal-box {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.v--modal-overlay.scrollable .v--modal-box {
+  margin-bottom: 2px;
+}
+.v--modal {
+  background-color: white;
+  text-align: left;
+  border-radius: 3px;
+  box-shadow: 0 20px 60px -2px rgba(27, 33, 58, 0.4);
+  padding: 0;
+}
+.v--modal.v--modal-fullscreen {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  left: 0;
+  top: 0;
+}
+.v--modal-top-right {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.overlay-fade-enter-active,
+.overlay-fade-leave-active {
+  transition: all 0.2s;
+}
+.overlay-fade-enter,
+.overlay-fade-leave-active {
+  opacity: 0;
+}
+.nice-modal-fade-enter-active,
+.nice-modal-fade-leave-active {
+  transition: all 0.4s;
+}
+.nice-modal-fade-enter,
+.nice-modal-fade-leave-active {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+</style><style type="text/css">
+.vue-dialog div {
+  box-sizing: border-box;
+}
+.vue-dialog .dialog-flex {
+  width: 100%;
+  height: 100%;
+}
+.vue-dialog .dialog-content {
+  flex: 1 0 auto;
+  width: 100%;
+  padding: 15px;
+  font-size: 14px;
+}
+.vue-dialog .dialog-c-title {
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.vue-dialog .dialog-c-text {
+}
+.vue-dialog .vue-dialog-buttons {
+  display: flex;
+  flex: 0 1 auto;
+  width: 100%;
+  border-top: 1px solid #eee;
+}
+.vue-dialog .vue-dialog-buttons-none {
+  width: 100%;
+  padding-bottom: 15px;
+}
+.vue-dialog-button {
+  font-size: 12px !important;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  line-height: 40px;
+  height: 40px;
+  color: inherit;
+  font: inherit;
+  outline: none;
+}
+.vue-dialog-button:hover {
+  background: rgba(0, 0, 0, 0.01);
+}
+.vue-dialog-button:active {
+  background: rgba(0, 0, 0, 0.025);
+}
+.vue-dialog-button:not(:first-of-type) {
+  border-left: 1px solid #eee;
+}
+</style><style id="vuescroll-silde-mode-style" type="text/css">
+    @-webkit-keyframes loading-rotate {
+      to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn);
+      }
+    }
+
+    @keyframes loading-rotate {
+      to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn);
+      }
+    }
+
+    @-webkit-keyframes loading-wipe {
+      0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+      }
+      50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -40px;
+      }
+      to {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -120px;
+      }
+    }
+
+    @keyframes loading-wipe {
+      0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+      }
+      50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -40px;
+      }
+      to {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -120px;
+      }
+    }
+
+    .__vuescroll .__refresh,
+    .__vuescroll .__load {
+      position: absolute;
+      width: 100%;
+      color: black;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      font-size: 16px;
+    }
+    .__vuescroll .__refresh svg,
+    .__vuescroll .__load svg {
+      margin-right: 10px;
+      width: 25px;
+      height: 25px;
+      vertical-align: sub;
+    }
+    .__vuescroll .__refresh svg.active,
+    .__vuescroll .__load svg.active {
+      transition: all 0.2s;
+    }
+    .__vuescroll .__refresh svg.active.deactive,
+    .__vuescroll .__load svg.active.deactive {
+      transform: rotateZ(180deg);
+    }
+    .__vuescroll .__refresh svg path,
+    .__vuescroll .__refresh svg rect,
+    .__vuescroll .__load svg path,
+    .__vuescroll .__load svg rect {
+      fill: #20a0ff;
+    }
+    .__vuescroll .__refresh svg.start,
+    .__vuescroll .__load svg.start {
+      stroke: #343640;
+      stroke-width: 4;
+      stroke-linecap: round;
+      -webkit-animation: loading-rotate 2s linear infinite;
+      animation: loading-rotate 2s linear infinite;
+    }
+    .__vuescroll .__refresh svg.start .bg-path,
+    .__vuescroll .__load svg.start .bg-path {
+      stroke: #f2f2f2;
+      fill: none;
+    }
+    .__vuescroll .__refresh svg.start .active-path,
+    .__vuescroll .__load svg.start .active-path {
+      stroke: #20a0ff;
+      fill: none;
+      stroke-dasharray: 90, 150;
+      stroke-dashoffset: 0;
+      -webkit-animation: loading-wipe 1.5s ease-in-out infinite;
+      animation: loading-wipe 1.5s ease-in-out infinite;
+    }
+  </style><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+
+
+<body onload="removePanelLoad()">
+    <div class="full-scroll">  
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3NP8HC" height="0" width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!--[if lt IE 9]>
+            <table  style="HEIGHT: 100%; WIDTH: 100%; TABLE-LAYOUT: fixed">
+                <tr style="height: 10%">
+                    <td style="TEXT-ALIGN: right; PADDING-RIGHT: 2em">
+                        <img id="firstImg" src="https://www.bice.cl/imagenes/imagenlogo/bancobice_grande.png" style="width: 320px;">
+                    </td>
+                </tr>
+                <tr style="height: 80%" class="test">
+                    <td>
+                        <div class="row text-center headerSignin" style="WIDTH: 50%; TOP: 29%; margin-right:auto; margin-left:auto; background-color:white;">
+                            <br />
+                            <br/>
+                            <strong>Hola!</strong>
+                            <br/>
+                            <span class="welcomeTxt">
+                                Para tener una mejor experiencia de navegación, este sitio está diseñado para ser utilizado con:<br/> Chrome, Safari, IExplorer9+, Firefox.
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="height: 10%; background-color: #326295;">
+                    <td>
+                        <table style="width:100%">
+                            <tr>
+                                <th width="40%"></th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td align="center" >
+                                    <p class = "txtSbif"style="width:100%;color:white;">
+                                        @ 2022 Todos los Derechos Reservados. Infórmese sobre la garantía estatal de los depósitos en su 
+                                        banco o en www.cmfchile.cl. Casa Matriz: Teatinos 220, Santiago, Chile.
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            
+            <style> 
+                .container-fluid.containerHeader, .container-fluid.containerCenter, #leftContainer, #rightContainer{
+                    display:none;
+                }
+                .test{
+                    background-image:url(./img/loginIE8.jpeg);
+                    background-repeat:no-repeat;
+                    background-position-y:center;
+                    background-position-x:center;
+                }
+                html,body{
+                    min-height:600px;
+                    min-width:520px;
+                    background-color:white !important;
+                    height: 100%;
+                }
+
+                #loadingBoxMask{
+                    display: none;
+                }
+                
+            </style>
+        <![endif]-->
+
+        <div style="display: flex; padding: 12px 25px 12px 21px; align-items: center;" ;="" class="divAviso" id="divAviso">
+            <div style="flex-grow: 2; ">
+                <img src="./personas/img/warning.svg">
+            </div>
+            <div style="flex-grow: 8; padding: 0px 17px;">
+            <p class="text-left pAviso" id="pAviso" style="margin-bottom: 0px;"><strong>¡No caigas en estafas telefónicas!</strong> Te recordamos que NUNCA te contactará un/a ejecutivo/a BICE para realizar devoluciones de ningún tipo, por ejemplo, comisiones supuestamente cobradas de manera errónea, ni transacciones que requieran tu autorización a través de BICE Pass. <strong>NUNCA ENTREGUES TUS CLAVES</strong>. Ante cualquier sospecha, llámanos al 600 400 2400.</p></div>
+            <div style="flex-grow: 2; ">
+            <img id="exitAviso" src="./personas/img/close.svg" alt="" class="" onclick="closeDiv()" style="cursor: pointer;"></div>
+        </div>
+
+    <!-- <div class="row divAviso" id="divAviso">
+        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-1" >
+        </div>
+        <div class="col-md-8 col-lg-8 col-sm-8 col-xs-9" style="padding: 0px!important;">
+            <img src="./personas/img/alert_warning.svg" style="position: absolute; margin: 20px 0px 0px -40px;">
+            <p class="text-center pAviso" id="pAviso"><strong>¡No caigas en estafas telefónicas!</strong> Te recordamos que NUNCA te contactará un/a ejecutivo/a BICE para realizar devoluciones de ningún tipo, por ejemplo, comisiones supuestamente cobradas de manera errónea, ni transacciones que requieran tu autorización a través de BICE Pass. <strong>NUNCA ENTREGUES TUS CLAVES</strong>. Ante cualquier sospecha, llámanos al 600 400 2400.</p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-1">
+            <img id="exitAviso" src="./personas/img/close.svg" alt="" class="" onclick="closeDiv()" style="cursor: pointer; padding-top: 18px;">
+        </div>
+    </div> -->
+    <div id="rowPrincipal" class="row h100" style="margin-right: 0px;margin-left: 0px;">
+
+
+        <div id="leftDiv" class="col-sm-12 col-lg-6 painted h100">
+            <div id="spacerHead" class="spacer85px spacerHead"></div>
+            <!--SOLO VISTA MOBILE
+            <div class="spacer5 spacerMobile" style="display: none;"></div>-->
+            <div class="irAlInicio" align="center">
+                <a class="biceClaro" href="./personas.html" target="_top" style="margin-right: 230px;">
+                    <img src="./personas/img/arrow-left.svg" alt="" class="">
+                    <span class="azulBiceClaro" style="font-weight: 400;">Ir al Inicio</span>
+                </a>
+            </div>
+
+
+            <form id="formOne" method="post" name="formulario" action="https://www.bice.cl/bice/servlet/bice/template/bice%2Cresumen%2CResFormResumen.vm/action/LoginEncrip
+			" target="_parent" onsubmit="return false;" accept-charset="ISO-8859-1">
+
+                <div class="row text-center headerSignin">
+                    <div class="spacer5"></div>
+                    <img id="firstImg" src="./personas/img/logo-bice.svg" style="width: 186px;">
+                    <div class="spacer24px"></div>
+                    <p class="popFont" style="font-size: 16px; opacity: 0.6; margin: 0px">Te damos la bienvenida a Banca Personas</p>
+                        <div class="spacer24px"></div>
+                    <div class="row" id="alertWarning" style="display: none;" align="center">
+                        <div class="w300 alertRojo">
+                            <p id="textoError" class="textoAlert" style="text-align: left">
+                                Por seguridad bloqueamos tu Acceso, para desbloquearlo llámanos al 600 400 1000.
+                            </p>
+                        </div>
+                        <div class="spacer3"></div>
+                    </div>
+                    <div class="row" id="alertAlert" style="display: none;" align="center">
+                        <div class="w300 alertAmarillo">
+                            <p id="textoAlert" class="textoAlert" style="text-align: left">
+                                Por seguridad bloqueamos tu Acceso, para desbloquearlo llámanos al 600 400 1000.
+                            </p>
+                        </div>
+                        <div class="spacer3"></div>
+                    </div>
+                </div>
+
+
+                <div class="row" id="rutOtherBrowser" align="center">
+                    <div class="col-md-12">
+
+                        <span id="labelRut" class="h40 rutLabel cursorText" onclick="forceFocusRut(); moveLabelRut()" style="margin-left: -130px;color: #AFBACC;">RUT</span>
+                        <input id="inputRut" maxlength="12" autocomplete="off" name="USUARIO-SHOW" type="text" class="form-control inputRut h40 w300" onfocus="focusRut(1);moveLabelRut()" onclick="" onblur="outLabelRut(event);focusRut(0);formatRutPersonas()" onkeyup="suppressCharacterRutPersona(event);" tabindex="1">
+                    </div>
+                    <div class="col-md-12" style="height: 32px;">
+                        <div id="textTwo" name="textTwo" class="w300" style="font-size: 13px;display:none; color: #FF312D!important; text-align: left; padding-left: 19px; padding-top: 5px;">
+                            El Rut no es correcto.</div>
+                    </div>
+                </div>
+                <div class="row" id="passOtherBrowser" align="center">
+                    <div class="col-md-12 ">
+
+                        <span id="labelPassword" class="h40 passwordLabel cursorText" onclick="forceFocusPassword(); moveLabelPassword()" style="margin-left: -130px;color: #AFBACC;">Clave
+                            Internet</span>
+                        <input type="password" class="form-control h40 w300 letterSpacingPassword inputPassword inputPasswordMD" name="CTR" onclick="" onblur="outLabelPassword(event);" id="inputPassword" maxlength="8" onfocus="focusClave(1);moveLabelPassword()" autocomplete="new-password" tabindex="2">
+                        <span class="unselectable" style="margin-left: 115px;position: absolute;z-index: 10;cursor: pointer;top: 15px;" id="showPassword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </div>
+                    <div class="col-md-12" style="height: 32px;">
+                        <div id="textOne" name="textOne" class="w300" style="font-size: 13px;display:none; color: #FF312D!important; text-align: left; padding-left: 19px; padding-top: 5px;">
+                            Por favor, ingresa tu clave de internet.</div>
+                    </div>
+                </div>
+
+
+                
+                
+            
+                <div class="row" align="center">
+                    <div class="col-md-12" style="height: 48px;">
+                        <a id="linkClaveInternet" href="./personas.html">
+                            <b style="color: #1976D2;cursor: pointer;font-family: Poppins;font-style: normal;font-weight: normal;font-size: 12px;line-height: 18px;text-decoration-line: underline;color: #1976D2; ">
+                                ¿Tienes problemas con tu clave internet?
+                            </b>
+                        </a>
+                    </div>
+                </div>
+                <div class="row" align="center">
+                    <div class="col-md-12 " style="height:85px !important">
+                        <button tabindex="3" id="entrar" name="entrar" type="submit" title="Entrar" class="entrar boton btn btn-primary w300" onclick="rescatarInputs()">
+                            Ingresar<i name="spinnerLoading" style="display:none;" class="fa fa-spinner fa-spin"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row" align="center">
+                    <div class="col-md-12" style="height: 42px;">
+                        <div class="w300 " style="text-align: center;">
+                            <div style="text-align: center !important;">
+                                <div style="width: 56px;float:left;margin-top: -10px;"><hr style="color:#C8D1E0;"></div>
+                                <div style="width: 180px;float:left;">&nbsp;<b style="font-family: Poppins;font-style: normal;font-weight: bold;font-size: 14px;line-height: 21px;text-align: center;color: #8C8C83;">Para más información</b>&nbsp;
+                                </div>
+                                <div style="width: 56px;float:left;margin-top: -10px;"><hr style="color:#C8D1E0;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="row spanpassword" align="center">
+                    <img src="./personas/img/group_7317.svg" style="color:#8c8e92; width:173px;cursor:pointer;" onclick="openChatWithOutText(' ')">
+                    <a href="tel:6004001000"><img src="./personas/img/group_7316.svg" style="color:#8c8e92; width:130px"></a>
+                </div>
+                <input type="hidden" name="USUARIO">
+                <input type="hidden" name="CLAVE" autocomplete="new-password">
+                <input type="hidden" name="ip" value="146.70.202.38">
+                <input type="hidden" name="BROWSER" value="">
+                <input type="hidden" name="SO" value="">
+                <input type="hidden" name="HEIGHT" value="">
+                <input type="hidden" name="WIDTH" value="">
+                <input type="hidden" name="eventSubmit_doLogin" value="Enviar">
+                <input type="hidden" name="ORIGEN" value="PBP">
+            </form>
+            <form class="d-none" method="post" name="formulario2" action="https://www.bice.cl/bice/servlet/bice/template/bice%2Cresumen%2CResFormResumen.vm/action/LoginEncrip" target="_parent" onsubmit="return false;" accept-charset="ISO-8859-1">
+                <input type="hidden" name="TIPO-LOGIN2" id="TIPO-LOGIN2">
+                <input type="hidden" name="USUARIO-SHOW2" id="USUARIO-SHOW2">
+                <input type="hidden" name="CTR2" id="CTR2">
+                <input type="hidden" name="NSP" value="1">
+                <input type="hidden" name="ip2" value="" id="ip2">
+                <input type="hidden" name="BROWSER2" value="" id="BROWSER2">
+                <input type="hidden" name="SO2" value="" id="SO2">
+                <input type="hidden" name="HEIGHT2" value="" id="HEIGHT2">
+                <input type="hidden" name="WIDTH2" value="" id="WIDTH2">
+                <input type="hidden" name="eventSubmit_doLogin2" value="" id="eventSubmit_doLogin2">
+                <input type="hidden" name="ORIGEN2" value="" id="ORIGEN2">
+                <input type="hidden" name="USUARIO2" value="" id="USUARIO2">
+                <input type="hidden" name="CLAVE2" value="" id="CLAVE2">
+                <input type="hidden" name="MKT-DIRECT-MODULE" id="MKT-DIRECT-MODULE" value="">
+            </form>
+        </div>
+
+        <div class="d-none d-md-block col-sm-6 col-lg-6 imagenLogin" style="height: 100%; background-image: url(&quot;https://bice.modyocdn.com/uploads/f750c98c-4f02-4f98-8807-eba96426ce3a/original/login_Persona_Prevencio_n.svg&quot;);">
+
+        </div>
+        <footer class="fixed-bottom">
+            <div class="row">
+                <div class="col-md-12" align="center">
+                    <p class="legal-center"> <i class="fa fa-copyright" style="margin: 0px;"></i> 2022 Todos los
+                        Derechos
+                        Reservados.</p>
+                    <p class="legal-center">Infórmese sobre la garantía estatal de los depósitos en su banco o en
+                        www.cmfchile.cl</p>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <!--MODAL OB INVERSIONES-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="ObiRedirectModal">
+        <div class="modal-dialog" role="document" style="margin-top: 100px;">
+          <div class="modal-content" style="padding: 0px 32px 0px 32px; min-width: 670px;">
+            <div class="modal-header" style="border-bottom: none;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="opacity: 1; margin-right: -21px;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_198_16767)">
+                        <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#7F90AF"></path>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_198_16767">
+                        <rect width="24" height="24" fill="white"></rect>
+                        </clipPath>
+                        </defs>
+                    </svg>                        
+                </button>
+              </div>
+            <div class="modal-body">
+                <div class="row text-center">
+                    <div class="col-md-auto">
+                        <svg width="147" height="147" viewBox="0 0 147 147" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M126.955 73.5014C126.955 103.024 103.022 126.956 73.5 126.956C43.9778 126.956 20.0454 103.024 20.0454 73.5014C20.0454 43.9793 43.9778 20.0469 73.5 20.0469C103.022 20.0469 126.955 43.9793 126.955 73.5014Z" fill="#EBEFF5"></path>
+                            <path d="M98.5568 50.9482C98.5568 64.3254 87.7124 75.1697 74.3352 75.1697C60.958 75.1697 50.1136 64.3254 50.1136 50.9482C50.1136 37.5709 60.958 26.7266 74.3352 26.7266C87.7124 26.7266 98.5568 37.5709 98.5568 50.9482Z" fill="white"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M74.681 73.8672C75.6036 73.8672 76.3515 74.6151 76.3515 75.5376V120.277C76.3515 121.199 75.6036 121.947 74.681 121.947C73.7584 121.947 73.0106 121.199 73.0106 120.277V75.5376C73.0106 74.6151 73.7584 73.8672 74.681 73.8672Z" fill="#1976D2"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M103.067 86.8682C103.549 87.6548 103.303 88.6832 102.516 89.1653C94.5166 94.0675 87.9359 101.975 83.3215 108.762C81.0249 112.14 79.2381 115.206 78.0269 117.425C77.4216 118.534 76.9609 119.429 76.653 120.045C76.499 120.353 76.3833 120.59 76.3069 120.749C76.2687 120.828 76.2403 120.888 76.2219 120.927L76.2017 120.97L76.1973 120.98L76.1966 120.981C76.1965 120.981 76.1966 120.981 76.1966 120.981C75.8084 121.818 74.8154 122.182 73.9785 121.794C73.1415 121.406 72.7775 120.413 73.1655 119.576L74.681 120.279C73.1655 119.576 73.1653 119.576 73.1655 119.576L73.1686 119.569L73.1755 119.555L73.2007 119.501C73.2225 119.455 73.2544 119.388 73.2962 119.301C73.3798 119.127 73.5031 118.874 73.6651 118.55C73.9891 117.902 74.4682 116.971 75.0944 115.824C76.346 113.531 78.1887 110.369 80.5587 106.884C85.2772 99.9436 92.1776 91.5825 100.77 86.3167C101.557 85.8347 102.585 86.0816 103.067 86.8682Z" fill="#1976D2"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M48.3541 88.9252C48.8219 88.1301 49.8457 87.8647 50.6409 88.3325C61.2205 94.5566 67.6147 101.329 71.3749 106.596C73.2533 109.227 74.4703 111.476 75.223 113.087C75.5993 113.892 75.8596 114.537 76.0285 114.99C76.1129 115.217 76.1745 115.395 76.2163 115.522C76.2372 115.585 76.2532 115.636 76.2647 115.672L76.2784 115.717L76.2828 115.732L76.2845 115.738L76.2851 115.74C76.2854 115.741 76.2857 115.742 74.6819 116.209L76.2857 115.742C76.5438 116.627 76.035 117.555 75.1492 117.813C74.2649 118.07 73.3391 117.564 73.0794 116.68C73.0793 116.68 73.0792 116.68 73.0791 116.679C73.0789 116.679 73.0788 116.679 73.0786 116.678L73.079 116.679L73.0741 116.663C73.0686 116.645 73.0587 116.614 73.0442 116.57C73.0151 116.483 72.9674 116.343 72.8979 116.157C72.7589 115.784 72.533 115.222 72.1964 114.502C71.5233 113.061 70.4071 110.99 68.6558 108.537C65.1571 103.636 59.1072 97.1895 48.9468 91.2121C48.1516 90.7443 47.8862 89.7204 48.3541 88.9252Z" fill="#1976D2"></path>
+                            <path d="M93.5895 81.3028C88.9562 84.3369 86.5669 89.8683 93.5895 94.5171C97.443 103.957 104.602 101.431 108.842 97.0387C111.22 93.6845 112.759 89.8285 113.336 85.7827C113.912 81.7369 113.51 77.6149 112.16 73.75C105.399 78.7608 99.3635 77.5284 93.5895 81.3028Z" fill="#A2DBFA"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M112.651 72.152C113.159 72.3082 113.562 72.6965 113.737 73.198C115.175 77.3146 115.604 81.7062 114.99 86.017C114.375 90.3276 112.735 94.4337 110.204 98.0035C110.156 98.0721 110.102 98.1369 110.044 98.1974C107.772 100.552 104.516 102.634 101.071 102.634C97.4982 102.635 94.3402 100.423 92.2421 95.6186C88.7033 93.1325 87.1712 90.1539 87.5615 87.0918C87.9461 84.0739 90.1417 81.5624 92.6744 79.9039L92.6755 79.9031C95.5522 78.0227 98.5037 77.2773 101.261 76.581C101.539 76.5108 101.815 76.4411 102.089 76.3707C105.111 75.5944 108.052 74.7137 111.166 72.4065C111.592 72.0903 112.144 71.9958 112.651 72.152ZM94.5039 82.6993C92.4036 84.0749 91.0882 85.8459 90.8756 87.5142C90.6838 89.0186 91.3301 91.0167 94.5116 93.1228C94.7915 93.3081 95.0092 93.5735 95.1361 93.8844C96.895 98.1933 99.1557 99.2936 101.071 99.2932C103.197 99.2929 105.601 97.956 107.553 95.9669C109.736 92.8527 111.149 89.2848 111.682 85.5457C112.118 82.4864 111.955 79.3803 111.208 76.392C108.275 78.1499 105.487 78.9472 102.92 79.6066C102.653 79.6751 102.39 79.742 102.13 79.8081C99.3113 80.5242 96.8908 81.1392 94.5039 82.6993Z" fill="#1976D2"></path>
+                            <path d="M42.9868 97.7481C46.4338 101.433 51.8719 102.771 55.1695 95.8894C63.3328 91.1511 59.9854 85.1561 55.352 82.0162C51.9248 80.3785 48.1525 79.5549 44.3404 79.6122C40.5283 79.6694 36.7835 80.6058 33.4091 82.3456C38.9798 87.6411 38.6936 93.1603 42.9868 97.7481Z" fill="#A2DBFA"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M44.3154 77.9405C48.3842 77.8794 52.4116 78.7583 56.0723 80.5076C56.1476 80.5435 56.2201 80.5851 56.2892 80.6319C58.7781 82.3186 61.2089 84.9489 61.7092 88.0892C61.9677 89.7118 61.6933 91.4001 60.7282 93.0184C59.8438 94.5017 58.4223 95.8569 56.4462 97.0711C54.6286 100.582 52.0715 102.364 49.1835 102.45C46.3258 102.534 43.6749 100.927 41.7671 98.8881C39.6055 96.5781 38.4899 94.0371 37.4601 91.6915C37.3563 91.4552 37.2534 91.2208 37.1504 90.9889C36.013 88.4279 34.7994 85.9706 32.2582 83.5549C31.8662 83.1824 31.6789 82.6431 31.7554 82.1078C31.832 81.5725 32.1629 81.1073 32.6436 80.8595C36.2482 79.001 40.2466 78.0016 44.3154 77.9405ZM54.5173 83.4677C51.354 81.9776 47.8785 81.2283 44.3655 81.281C41.5653 81.3231 38.8049 81.8738 36.2224 82.8978C38.161 85.2027 39.2595 87.5068 40.2037 89.6328C40.3038 89.8582 40.4018 90.0804 40.4984 90.2995C41.5575 92.7011 42.4527 94.7312 44.2065 96.6053L44.2067 96.6055C45.7459 98.2509 47.5375 99.1558 49.0848 99.1101C50.4782 99.0689 52.1941 98.2318 53.6631 95.1661C53.8081 94.8636 54.0408 94.6117 54.331 94.4433C56.2071 93.3543 57.2838 92.2715 57.8588 91.3073C58.4172 90.3708 58.547 89.4756 58.4099 88.6148C58.1235 86.8172 56.6088 84.9127 54.5173 83.4677Z" fill="#1976D2"></path>
+                            <path d="Mnan nanL49.7939 51.1297C49.7939 54.3344 50.4376 57.5077 51.6884 60.4684C52.9391 63.4291 54.7724 66.1193 57.0834 68.3854C59.3945 70.6514 62.1381 72.4489 65.1577 73.6753C68.1773 74.9017 71.4136 75.5329 74.682 75.5329C77.9503 75.5329 81.1867 74.9017 84.2062 73.6753C87.2258 72.4489 89.9694 70.6514 92.2805 68.3854C94.5916 66.1193 96.4248 63.4291 97.6756 60.4684C98.9263 57.5077 99.5701 54.3344 99.5701 51.1297C99.5701 47.9251 98.9263 44.7518 97.6756 41.791C96.4248 38.8303 94.5916 36.1401 92.2805 33.8741C89.9694 31.608 87.2258 29.8105 84.2062 28.5841C81.1867 27.3578 77.9503 26.7266 74.682 26.7266C71.4136 26.7266 68.1773 27.3578 65.1577 28.5841C62.1381 29.8105 59.3945 31.608 57.0834 33.8741C54.7724 36.1401 52.9391 38.8303 51.6884 41.791C50.4376 44.7518 49.7939 47.9251 49.7939 51.1297Lnan nanZ" fill="white"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M64.5291 27.035C67.7489 25.7273 71.1987 25.0547 74.6819 25.0547C78.1652 25.0547 81.615 25.7273 84.8348 27.035C88.0546 28.3428 90.9824 30.2604 93.45 32.6799C95.9177 35.0995 97.877 37.9738 99.2143 41.1396C100.552 44.3054 101.24 47.6997 101.24 51.1283C101.24 54.557 100.552 57.9512 99.2143 61.117C97.877 64.2828 95.9177 67.1571 93.45 69.5767C90.9824 71.9963 88.0546 73.9139 84.8348 75.2216C81.615 76.5293 78.1652 77.2019 74.6819 77.2019C71.1987 77.2019 67.7489 76.5293 64.5291 75.2216C61.3093 73.9139 58.3815 71.9963 55.9139 69.5767C53.4462 67.1571 51.4869 64.2828 50.1496 61.117C48.8122 57.9512 48.1234 54.557 48.1234 51.1283C48.1234 47.6997 48.8122 44.3054 50.1496 41.1396C51.4869 37.9738 53.4462 35.0995 55.9139 32.6799C58.3815 30.2604 61.3093 28.3428 64.5291 27.035ZM74.6819 28.3956C71.6285 28.3956 68.6056 28.9853 65.7863 30.1304C62.967 31.2754 60.4074 32.9529 58.2529 35.0654C56.0985 37.1779 54.3913 39.684 53.2271 42.4397C52.063 45.1953 51.4643 48.1476 51.4643 51.1283C51.4643 54.109 52.063 57.0613 53.2271 59.8169C54.3913 62.5727 56.0985 65.0787 58.2529 67.1912C60.4074 69.3037 62.967 70.9812 65.7863 72.1262C68.6056 73.2713 71.6285 73.861 74.6819 73.861C77.7354 73.861 80.7583 73.2713 83.5776 72.1262C86.3969 70.9812 88.9565 69.3037 91.111 67.1912C93.2654 65.0787 94.9726 62.5727 96.1368 59.8169C97.3009 57.0613 97.8996 54.109 97.8996 51.1283C97.8996 48.1476 97.3009 45.1953 96.1368 42.4397C94.9726 39.684 93.2654 37.1779 91.111 35.0654C88.9565 32.9529 86.3969 31.2754 83.5776 30.1304C80.7583 28.9853 77.7354 28.3956 74.6819 28.3956Z" fill="#1976D2"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M77.3889 42.3933C76.4564 41.9387 75.4351 41.7252 74.4107 41.7682C74.3874 41.7692 74.364 41.7697 74.3407 41.7697C70.6935 41.7697 68.4886 44.0044 68.4886 45.9424C68.4886 47.8817 70.695 50.1189 74.3407 50.1189C78.9994 50.1189 83.5227 53.1139 83.5227 57.6288C83.5227 62.1347 79.0081 65.1278 74.3603 65.1424C72.7902 65.2015 71.2311 64.8704 69.8143 64.1796C68.3874 63.4839 67.1496 62.4452 66.202 61.1567C65.6555 60.4135 65.8149 59.3679 66.5582 58.8213C67.3014 58.2747 68.347 58.4342 68.8935 59.1774C69.5261 60.0377 70.3455 60.7217 71.2785 61.1766C72.2112 61.6314 73.2326 61.8453 74.2573 61.803C74.2802 61.8021 74.3031 61.8016 74.3261 61.8016C77.9768 61.8016 80.1818 59.5633 80.1818 57.6288C80.1818 55.6925 77.9852 53.4599 74.3407 53.4599C69.6831 53.4599 65.1477 50.4621 65.1477 45.9424C65.1477 41.4329 69.6621 38.4437 74.3059 38.4288C75.8763 38.3688 77.4359 38.6994 78.853 39.3903C80.2805 40.0863 81.5184 41.1258 82.4654 42.4155C83.0114 43.1591 82.8513 44.2046 82.1077 44.7506C81.364 45.2967 80.3186 45.1365 79.7725 44.3929C79.1406 43.5323 78.3216 42.8481 77.3889 42.3933Z" fill="#1976D2"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M75.1705 61.8047C76.093 61.8047 76.8409 62.5526 76.8409 63.4751V66.8161C76.8409 67.7386 76.093 68.4865 75.1705 68.4865C74.2479 68.4865 73.5 67.7386 73.5 66.8161V63.4751C73.5 62.5526 74.2479 61.8047 75.1705 61.8047Z" fill="#1976D2"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M75.1705 35.0781C76.093 35.0781 76.8409 35.826 76.8409 36.7486V40.0895C76.8409 41.0121 76.093 41.7599 75.1705 41.7599C74.2479 41.7599 73.5 41.0121 73.5 40.0895V36.7486C73.5 35.826 74.2479 35.0781 75.1705 35.0781Z" fill="#1976D2"></path>
+                        </svg>  
+                    </div>
+                </div>
+                <div class="row text-center" style="padding-top: 32px;">
+                    <div class="col-md-auto">
+                        <h3 style="font-weight: 700; font-size: 24px; color: #333840;">Invertir es más fácil para ti</h3>
+                    </div>
+                </div>
+                <div class="row text-center" style="padding-top: 16px;">
+                    <div class="col-md-auto">
+                        <h4 style="font-weight: 300; font-size: 16px; color: #58606E;">Ingresa al sitio y firma el contrato de inversión. ¡Listo! ya puedes invertir.</h4>
+                    </div>
+                </div>
+                <div class="row text-center" style="padding-top: 16px;">
+                    <div class="col-md-auto">
+                        <button tabindex="3" id="entendido" name="entendido" type="submit" title="Entendido" class="entrar boton btn btn-primary" style="max-width: 148px;" data-dismiss="modal">
+                            Entendido
+                        </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+
+    <!--  ChatBot -->
+    <div class="row" id="controlChatBot" style="display: none;">
+
+        <ics:if condition="<%=(&quot;1399334048250&quot;).equalsIgnoreCase(ics.GetVar(&quot;_paginaAreaPadreId&quot;))%>">
+            <ics:then>
+                <div><div data-v-48aa24fd="" style="position: relative; z-index: 99999;" voiceon="true"><div data-v-48aa24fd="" class="sc-clean sc-launcher"><img data-v-48aa24fd="" src="https://bice.modyocdn.com/uploads/5cf247a9-e13d-4e4a-8623-d9847e73cb41/original/asistente-virtual-b1c3.png" class="sc-new-icon"><!----><!----><!----></div><div data-v-3c85f06b="" data-v-48aa24fd="" class="sc-chat-window sc-clean closed"><div data-v-7746b688="" data-v-3c85f06b="" class="sc-header"><img data-v-7746b688="" src="https://bice.modyocdn.com/uploads/a71cf281-8348-429c-a8fd-c3a7df6fddc9/original/avatar-charbot-b1c3.png" alt="" class="sc-header--img"><div data-v-7746b688="" class="sc-header--title"><span data-v-7746b688="">B1C3</span><span data-v-7746b688="" class="sc-header--subtitle">Asistente Virtual</span></div><div data-v-7746b688="" class="sc-header--close-button"><img data-v-7746b688="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGUAAAA/CAYAAAD5aQZeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAeVJREFUeNrs3OFtwjAQBWDMBIyQbsAK3YAR0hHYoBswQrpBR2AEukG6AWzgnmlC+REQJLH77u49yTjwI7HvU7CMUEKMccEoi6BtpH3GvxykvUtbsTp367bq6nS4ql2q42bqiZt4O620Ncs/WLd1V59baXKA9DkSZhDk+EDtmhwghBkP8hzMkyCEGQ/yGMxIEPcwE0Duw0wEcQszA8gwjHywi/PFDcyMIH126bxBDirp25nHe5L2GkL4sgwi3V7a3Pu1l6W81BnGnAa6t3rHZARJqZcZx24SJjPIOcvMczAFUwKkR/kmDA5I8gjdD4ttgYupXfwLgpzOC70UKR1sC8xN5R1TECRl23lcLl7HMlGzj8mwD7mX+tYgCIMEQhhQEMKAgniGgQbxCKMCxBOMKhAPMCpBLMOoBrEIYwLEEowpEAswJkE0w5gG0QjjAkQTjCsQDTAuQZBhXIMgwhAEDIYgYDAEAYMhCB5MbQUklICRrlnYyVsI4UM1ijGY7CBWv8q4hjiBsQmiGMY2iEIYHyCKYHyBKIDxCQIM4xsEEIYgYDAEAYMhCBgMQcBgCAIGQxAwGIKAwRAEDIYgYDAEAYMhCBgMQcBgCAIGQ5B/gqni71Ni26v/f6X3leZ5ped9URcsPwIMAHbXG4B5ta2UAAAAAElFTkSuQmCC" alt=""></div></div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div data-v-2f67fc6a="" data-v-3c85f06b="" class="sc-message-list"><div data-v-2f67fc6a="" class="sc-message" style="display: none;"><div class="sc-message--content received"><div data-v-42dbbe59="" class="sc-typing-indicator"><span data-v-42dbbe59=""></span><span data-v-42dbbe59=""></span><span data-v-42dbbe59=""></span></div></div></div></div><div data-v-3c85f06b=""><div class="sc-suggestions-row" style="background: rgb(255, 255, 255);"></div><!----><form class="sc-user-input" style="background: rgb(255, 255, 255); --showInput: flex;"><div role="button" tabindex="0" placeholder="" class="sc-user-input--text" style="color: rgb(33, 33, 33); cursor: text;" contenteditable="true"></div><div class="sc-user-input--buttons"><!----><!----><div class="sc-user-input--button"><button data-v-341a9f9e="" class="sc-user-input--send-icon-wrapper"><svg data-v-341a9f9e="" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="37.393px" height="37.393px" viewBox="0 0 37.393 37.393" enableBackground="new 0 0 37.393 37.393" class="sc-user-input--send-icon"><g data-v-341a9f9e="" id="Layer_2"><path data-v-341a9f9e="" d="M36.511,17.594L2.371,2.932c-0.374-0.161-0.81-0.079-1.1,0.21C0.982,3.43,0.896,3.865,1.055,4.241l5.613,13.263
+        L2.082,32.295c-0.115,0.372-0.004,0.777,0.285,1.038c0.188,0.169,0.427,0.258,0.67,0.258c0.132,0,0.266-0.026,0.392-0.08
+        l33.079-14.078c0.368-0.157,0.607-0.519,0.608-0.919S36.879,17.752,36.511,17.594z M4.632,30.825L8.469,18.45h8.061
+        c0.552,0,1-0.448,1-1s-0.448-1-1-1H8.395L3.866,5.751l29.706,12.757L4.632,30.825z" style="fill: rgb(33, 33, 33);"></path></g></svg></button></div></div></form></div></div></div><!----></div>
+                <script>
+                    window.GB_SETUP = {
+                        websocket_url: "wss://api-wss-va.bice.cl",
+                        type: "config",
+                        channel: "5e1f1a243b7a55428db9af25",
+                        session_id: ""
+                    };
+                </script>
+
+                <div class="modal fade" id="modalSesionTimeOut" tabindex="-1" role="dialog" aria-labelledby="modalSesionTimeOutTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document" style="width:300px;margin: 0 auto">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">
+                                    <img src="./personas/img/logo_bice.png" width="100">
+                                </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body" style="font-size: 15px;">
+                                Su sesión ha terminado.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </ics:then>
+        </ics:if>
+    </div>
+    <!-- end ChatBot -->
+
+<div><img style="width: 1px;" src="https://www.bice.cl/images/nsp/logo_bice.png"></div>
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon="{&quot;rayId&quot;:&quot;826a7252c83f42fb&quot;,&quot;version&quot;:&quot;2023.10.0&quot;,&quot;token&quot;:&quot;c933955080d94080adae926aceb659d7&quot;}" crossorigin="anonymous"></script>
+
+
+<script src="./personas/js/login.js"></script>
+<script src="./personas/js/content.js?v=1.0"></script>
+<script src="https://static-va.bice.cl/release/chatbox/js/chunk-vendors.js"></script>
+<script src="https://static-va.bice.cl/release/chatbox/js/app.js"></script>
+<!--[if lt IE 9]>
+    <script type="text/javascript">
+        var rv = 11;
+        if (navigator.appName == 'Microsoft Internet Explorer') {
+            var ua = navigator.userAgent;
+            var re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+            if (re.exec(ua) != null)
+                rv = parseFloat(RegExp.$1);
+        }
+        if(rv<=8){
+            document.getElementById("rowPrincipal").style.display = "none";
+        }
+
+    </script>
+    <![endif]-->
+
+<script>
+function getIpAddress() {
+    if (detectIE() == -1) {
+        $.getJSON("https://ingreso.bice.cl/ObtieneIPCliente.php",
+            function(data) {
+                document.getElementsByName("ip")[0].setAttribute("value", data.ip);
+            });
+    }
+}
+</script></body></html>

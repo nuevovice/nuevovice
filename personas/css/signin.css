@@ -1,0 +1,820 @@
+.popFont {
+  font-family: "Poppins", sans-serif;
+}
+
+input[type="text"] {
+  border: 1px solid #afbacc;
+}
+
+input[type="password"] {
+  border: 1px solid #afbacc;
+}
+
+/* (1920x1080) Full HD Display */
+
+@media screen and (max-width: 1920px) and (min-width: 1900px) {
+  .h100 {
+    height: 100vh;
+  }
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS here */
+  .rowIE {
+    width: 100%;
+  }
+}
+
+/* 4K */
+
+@media screen and (min-device-width: 1366px) {
+  html,
+  body {
+    height: 100%;
+  }
+  .row.rowIE {
+    width: 100%;
+  }
+  .containerCenter {
+    height: 77% !important;
+  }
+  .containericons {
+    width: 100% !important;
+  }
+  #leftContainer {
+    padding-right: 17%;
+  }
+  #rightContainer {
+    padding-left: 6%;
+  }
+}
+
+/* (1440x900) WXGA+ Display */
+
+@media screen and (max-width: 1440px) {
+  html,
+  body {
+    height: 100%;
+  }
+  .passwordDiv {
+    height: 77px !important;
+  }
+}
+
+/* (1024x768) iPad 1 & 2, XGA */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .containerHeader {
+    padding-right: 3em;
+  }
+  .container-fluid.text-center {
+    padding-top: 1em;
+    padding-bottom: 2%;
+  }
+  html,
+  body {
+    height: 100%;
+  }
+  .containerCenter {
+    height: 76% !important;
+  }
+  #myVideo {
+    padding-bottom: 8em !important;
+  }
+}
+
+/* END LAPTOP 1366*768PX */
+
+/* (1280x1024) SXGA Display */
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1280px) {
+  html,
+  body {
+    height: 100%;
+  }
+  .containerCenter {
+    height: 79% !important;
+  }
+  .linkHelperTxt {
+    font-weight: initial !important;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 10px) {
+  html,
+  body {
+    height: 100%;
+  }
+  .footerLeft {
+    display: none;
+  }
+  .inputsField > input {
+    padding-left: 23% !important;
+  }
+  .containerCenter {
+    min-height: 518px !important;
+    height: 80% !important;
+  }
+  .containerCenter > div {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .container-fluid.containerHeader > div > div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .headerSignin > strong {
+    font-size: 25px !important;
+  }
+  .welcomeTxt,
+  .inputsField.rut,
+  .inputsField.clave {
+    font-size: 16px !important;
+  }
+  #stepOne {
+    display: none;
+  }
+  #myVideo {
+    right: -74% !important;
+  }
+}
+
+/* END (1280x1024) SXGA Display */
+
+@media screen and (max-width: 800px) and (min-width: 480px) {
+  #myVideo {
+    right: -35% !important;
+  }
+}
+
+/* IPHONE X */
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+  #myVideo {
+    right: -25% !important;
+  }
+  .containerCenter {
+    min-height: 556px !important;
+  }
+}
+
+/* INIT LAPTOP <800PX */
+
+@media screen and (max-width: 800px) and (min-width: 480px) {
+  html,
+  body {
+    height: 100%;
+  }
+  .footerLeft {
+    display: none;
+  }
+  .inputsField > input {
+    padding-left: 23% !important;
+  }
+  .container-fluid.containerHeader > div > div {
+    margin-left: auto;
+  }
+}
+
+/* END LAPTOP <800PX */
+
+/* GALAXY S5*/
+
+@media screen and (max-width: 800px) {
+  .spacerHead {
+    padding-top: 10px !important;
+  }
+  .pAviso {
+    text-align: left;
+    /* padding-top: 12px; */
+    font-size: 13px !important;
+    margin: 0px !important;
+    color: #434a54 !important;
+  }
+  .irAlInicio {
+    display: none !important;
+  }
+}
+
+/* END GALAXY S5*/
+
+/*IPAD PRO */
+
+/* Portrait*/
+
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #myVideo {
+    min-height: 94%;
+    right: -31% !important;
+  }
+  .containerCenter {
+    height: 81% !important;
+  }
+}
+
+@media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  #myVideo {
+    min-height: 106%;
+  }
+}
+
+/*END IPAD PRO */
+
+/* (768x1024) iPad 1 & 2, Portrait */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .footerLeft {
+    display: inherit !important;
+  }
+  #myVideo {
+    min-height: 100%;
+    right: -29%;
+  }
+  .containerCenter {
+    height: 80% !important;
+  }
+}
+
+.containerHeader {
+  background-color: white;
+}
+
+.containerHeader > div {
+  border-bottom: 4px solid #326295;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#finalMinStep {
+  display: none;
+}
+
+.containerCenter {
+  height: 76%;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  min-height: 532px;
+}
+
+.linkbice {
+  color: white;
+}
+
+.containerCenter > div {
+  width: 100%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.topRowHelp {
+  text-align: left;
+  /*margin-left: 1em;*/
+}
+
+.spanpassword {
+  color: #8c8e92;
+  font-weight: 400;
+  padding-bottom: 1.5em;
+  text-align: center;
+}
+
+.headerSignin {
+  text-align: center;
+}
+
+.headerSignin > strong {
+  color: #63666a;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.welcomeTxt {
+  font-size: 18px;
+  color: #8c8e92;
+}
+
+.form-signin > .row.input {
+  margin-left: 7%;
+}
+
+.txtAvatarPersona {
+  font-size: 14px;
+  color: #8c8e92;
+}
+
+.btn-primary:hover {
+  background-color: #336295 !important;
+}
+
+.boton {
+  border-radius: 8px;
+  height: 56px;
+  margin-bottom: 4%;
+  padding: 0.5em 0;
+  font-size: 16px;
+  color: #ffffff;
+  background: #1976d2;
+  border: none;
+  width: 46%;
+  font-weight: 700;
+}
+
+.inputsField > div {
+  position: relative;
+}
+
+.inputsField {
+  width: 90%;
+  position: relative;
+  overflow: hidden;
+}
+
+.inputsField > input {
+  border-bottom-style: outset;
+  border-bottom-color: black;
+  border-bottom-width: 1px;
+  border-right-width: 0px;
+  border-left-width: 0;
+  border-top-width: 0px;
+  margin-left: 2em;
+  background-color: transparent;
+  width: 90%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 8px 12px;
+  outline: 0;
+  padding-left: 16%;
+}
+
+#emergency {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#security {
+  padding-right: 0px;
+  padding-left: 2px;
+}
+
+#partner {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  background-color: white;
+}
+
+.parpadea {
+  animation-name: parpadeo;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.loadingFrame {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+}
+
+.helperTxt {
+  padding-bottom: 1%;
+  margin-left: -23px;
+}
+
+.infoText {
+  color: #b51823;
+  font-weight: 400;
+  padding-top: 6px;
+}
+
+.passwordDiv {
+  height: 62px;
+}
+
+.inputsField > input {
+  font-weight: 500;
+  color: #37383a;
+}
+
+.fa {
+  margin-left: 12px;
+  margin-right: -37px;
+}
+
+.errorModal {
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  min-height: 520px;
+}
+
+.linkbice:hover {
+  color: white;
+}
+
+.txtSbif {
+  text-align: left;
+}
+
+#myVideo {
+  right: 0;
+  top: 0px;
+  min-width: 100%;
+  /*min-height: 81%;*/
+  position: fixed;
+  z-index: -1;
+  padding-bottom: 4em;
+}
+
+.onDiplay {
+  display: none;
+}
+
+.h100 {
+  height: 100vh;
+}
+
+.h40 {
+  height: 40px;
+}
+
+.w300 {
+  width: 300px !important;
+}
+
+.pl30 {
+  padding-left: 30%;
+}
+
+.margin0 {
+  margin: 0px;
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.pForm {
+  padding-top: 15px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  text-align: left;
+  border: none;
+  cursor: default;
+  padding-left: 0px;
+}
+
+.pFormError {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  text-align: left;
+  border: none;
+  cursor: default;
+  padding-left: 0px;
+}
+
+.azulBice {
+  font-size: 14px !important;
+  color: #005a96;
+}
+
+.azulBiceClaro {
+  font-size: 14px !important;
+  color: #1976d2;
+}
+
+.biceClaro:hover {
+  color: #1976d2;
+}
+
+.borderInputError {
+  border: 1.5px solid #ff312d !important;
+}
+
+.borderRadius2 {
+  border-radius: 4px !important;
+}
+
+@media (max-width: 1199px) {
+  .imagenLogin {
+    display: none;
+    height: 0px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .spacerMobile {
+    display: block !important;
+  }
+}
+
+.imagenLogin {
+  /* position: relative;*/
+  background-size: contain;
+  
+  background-repeat: no-repeat;
+}
+
+.spacer1 {
+  padding-top: 1%;
+}
+
+.spacer3 {
+  padding-top: 3%;
+}
+
+.spacer5 {
+  padding-top: 5%;
+}
+
+.spacer10 {
+  padding-top: 10%;
+}
+
+.spacer85px {
+  padding-top: 85px;
+}
+
+.spacer24px {
+  padding-top: 24px;
+}
+
+.spacer30px {
+  padding-top: 30px;
+}
+
+.spacer32px {
+  padding-top: 32px;
+}
+
+.inputPassword {
+  background-size: 20px;
+  background-image: url(../img/ojo-abierto.svg);
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+}
+
+.inputPasswordCerrado {
+  background-size: 20px;
+  background-image: url(../img/ojo-cerrado.svg);
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+}
+
+.inputDirec {
+  height: 50px;
+  padding-top: 5%;
+  padding-left: 15%;
+  border-top-right-radius: 0.9rem;
+  border-top-left-radius: 0.9rem;
+  border-bottom: 3px solid #326295;
+  background-image: url(../../img/icons/paso2_ubicacion.svg);
+  background-position: 3%;
+  background-repeat: no-repeat;
+}
+
+.container {
+  padding-top: 100px;
+  margin: auto;
+}
+
+.form-control {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  font-weight: 600 !important;
+  transition: border-color ease-in-out 0.4s, box-shadow ease-in-out 0.3s !important;
+}
+
+.form-control:focus {
+  border: 2px solid #1976d2 !important;
+  outline: 0;
+}
+
+.legal-center {
+  font-size: 12px !important;
+  margin: 0px;
+  color: #999999;
+  padding: 0 16px;
+  text-align: center;
+}
+
+input[type="password"]::-webkit-contacts-auto-fill-button,
+input[type="password"]::-webkit-credentials-auto-fill-button {
+  visibility: hidden;
+  display: none !important;
+  pointer-events: none;
+  height: 0;
+  width: 0;
+  margin: 0;
+}
+
+.rutLabel {
+  transition: all 0.15s ease-in-out;
+  font-size: 16px !important;
+  padding-top: 18px;
+  position: absolute;
+}
+
+.rutLabelPost {
+  transition: all 0.15s ease-in-out;
+  padding-top: 3px;
+  font-size: 12px !important;
+  position: absolute;
+}
+
+.inputRut {
+  font-size: 16px !important;
+  color: #414141 !important;
+  border: solid 1px #bbc1ce;
+  height: 56px;
+  padding-top: 15px;
+  padding-left: 18px;
+}
+
+.passwordLabel {
+  transition: all 0.15s ease-in-out;
+  font-size: 16px !important;
+  padding-top: 18px;
+  position: absolute;
+}
+
+.passwordLabelPost {
+  transition: all 0.15s ease-in-out;
+  padding-top: 3px;
+  font-size: 12px !important;
+  position: absolute;
+}
+
+.inputPasswordMD {
+  border: solid 1px #bbc1ce;
+  height: 56px;
+  padding-top: 15px;
+  padding-left: 18px;
+}
+
+.labelGreyForm {
+  font-weight: 400;
+  color: #afbacc;
+  margin-left: -150px;
+}
+
+.cursorText {
+  cursor: text;
+}
+
+footer {
+  position: fixed;
+  height: 50px;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.alertRojo {
+  line-height: normal;
+  text-align: left;
+  border-radius: 4px;
+  border: 2px solid #ff312d;
+  background: rgba(255, 49, 45, 0.06);
+  background-image: url(../img/icon_error_rojo.svg);
+  background-size: 25px;
+  background-position: 5%;
+  background-repeat: no-repeat;
+}
+
+.textoAlert {
+  margin: 10px 10px 10px 50px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.alertAmarillo {
+  text-align: justify;
+  border-radius: 4px;
+  width: 300px;
+  border: solid #f1ae2f;
+  background: rgba(249, 183, 73, 0.06);
+  background-image: url(../img/icon_error_amarillo.svg);
+  background-size: 25px;
+  background-position: 5%;
+  background-repeat: no-repeat;
+}
+
+.divAviso {
+  height: auto;
+  transition: all 0.15s ease-in-out;
+  background-color: #fef3cb;
+  z-index: 10;
+  border-left-style: solid;
+  border-left-color: #ee9800;
+  border-left-width: 4px;
+}
+
+.pAviso {
+  font-size: 14px;
+  /* margin: 20px 0px; */
+  color: #434a54;
+}
+
+/* FIX PANTALLAS < 680 HEIGHT S5*/
+
+@media screen and (max-height: 760px) {
+  #leftDiv {
+    transform: scale(0.9);
+    margin-top: -35px;
+  }
+  .pAviso {
+    font-size: 13px !important;
+    color: #434a54;
+    /* margin: 12px 0px !important; */
+  }
+}
+
+input[type="password"]::-ms-clear,
+input[type="password"]::-ms-reveal,
+input[type="text"]::-ms-clear {
+  display: none !important;
+}
+
+.inputRutIE {
+  font-size: 16px !important;
+  color: #414141 !important;
+  border: solid 1px #bbc1ce;
+  padding-top: 15px;
+  padding-left: 18px;
+}
+
+#exitAviso {
+  z-index: 9999999;
+}
+
+.full-scroll {
+  overflow: auto;
+  scroll-behavior: smooth;
+}
